@@ -1,4 +1,4 @@
-![alt tag](https://raw.githubusercontent.com/aweiand/facostex/master/figuras/facos-logo.png)
+![alt tag](https://raw.githubusercontent.com/aweiand/facostex/master/figuras/logo-facos.png)
 
 # O que é?
 
