@@ -11,12 +11,6 @@ Espera-se que o projeto seja um modelo de trabalho acadêmico que implemente tod
 
  - Trabalho de Conclusão de Curso de Graduação
  - Trabalho de Conclusão de Curso de Especialização
- - Dissertação de Mestrado Acadêmico e Profissional
- - Tese de Doutorado
- 
-**Qualificações**
-
- - Qualificação para Mestrado Acadêmico e Profissional
 
 # Por onde começo?
 Para utilizar o facosTeX você precisa seguir os seguintes passos:
@@ -43,67 +37,30 @@ Uma vez que todas as informações foram colocadas no documento, você precisar�
  O modelo atual possui algumas limitações que podem ser corrigidas ou implementadas em alguma versão futura. São elas:
  
   - O modelo permite a participação de somente um co-orientador
-  - A folha de aprovação da Dissertação suporta no máximo 5 pessoas (Orientador, Co-orientador e 3 membros externos)
-  - A folha de aprovação da Tese suporta no máximo 6 pessoas (Orientador, Co-orientador e 4 membros externos)
   
 # Dicas
 Veja a seguir como inserir alguns elementos no seu texto.
 
 ### Como inserir uma Tabela
 ```tex
-\begin{table}[h!]	
-	\centering
-	\Caption{\label{tab:label_da_tabela} Legenda da Tabela}
-	\UECEtab{}{
-		\begin{tabular}{ccll}
-			\toprule
-	    		Quisque & pharetra & tempus & vulputate \\
-			\midrule \midrule
-				E1 & Complete coverage & Both splice sites \\
-				E2 & Complete coverage & Both splice sites \\
-				E3 & Partial coverage & Both splice sites & Both \\
-				E4 & Partial coverage & One splice site & Both \\
-				E5 & Complete or coverage & No splice & Both \\
-				E6 & No coverage & No splice sites\\
-			\bottomrule
-		\end{tabular}
-	}{
-		\Fonte{Elaborado pelo autor}
-    }
+\begin{table}[htb]
+    \centering
+    \caption{\label{tab:tabela-exemplo2}Tabela Exemplo 2}
+    \begin{tabular}{lc}
+        \textbf{Coluna 1} & \textbf{Coluna 2} \\
+        Linha 1 Coluna 1  & Linha 1 Coluna 1  \\
+        Linha 2 Coluna 1  & Linha 2 Coluna 2 
+    \end{tabular}
 \end{table}
-```
-
-### Como inserir um Quadro
-```tex
-\begin{quadro}[h!]	
-	\centering
-	\Caption{\label{qua:label_do_quadro} Legenda do Quadro}
-	\UECEqua{}{
-		\begin{tabular}{|c|c|}
-			\hline
-			Quisque & pharetra \\
-			\hline
-			E1 & Complete coverage  \\
-			\hline
-			E2 & Complete coverage \\
-			\hline
-		\end{tabular}
-	}{
-		\Fonte{Elaborado pelo autor}
-	}
-\end{quadro}
 ```
 
 ### Como inserir uma figura
 ```tex
-\begin{figure}[h!]
-	\centering
-	\Caption{\label{fig:label_da_figura} Legenda da Figura}	
-	\UECEfig{}{
-	    \includegraphics[width=8cm]{figuras/figura-1}
-	}{
-	    \Fonte{Elaborado pelo autor}
-	}	
+\begin{figure}[htb]
+    \centering\includegraphics[width=.80\textwidth]{figuras/figura-1.jpg}
+    \caption{\label{fig:exemplo-18}Exemplo.}
+    
+    Fonte: Exemplo%
 \end{figure}
 ```
 
